@@ -1,12 +1,1 @@
-# HttpTaskManager
-An implementation transparant and Java based task manager which can take arguments from a HTTP client for use in your Java back-ends and ecosystem. 
-
-
-Roadmap
----
-
-1. HTTP Client.
-2. A-synchronous tasks and task management. 
-3. Synchronous tasks. 
-4. Support for listeners and handles.
-5. Distributed locking and zookeeper support.
+https://codemunity-courses.thinkific.com/courses/take/akka-http-quickstart/lessons/4625562-installing-the-dependencies 
