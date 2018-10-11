@@ -5,7 +5,7 @@ A Java based task manager which can take arguments from a HTTP client for use in
 Roadmap
 ---
 
-1. HTTP Client.
+1. HTTP Client. ✅
 2. A-synchronous tasks and task management. 
 3. Synchronous tasks. 
 4. Support for listeners and handles.
