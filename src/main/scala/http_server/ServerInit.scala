@@ -10,7 +10,7 @@ object ServerInit{
     val port = 9000
     // Import Akka ActorSystem and Materializer
     // Import Dispatcher (implicit).
-    implicit val system: ActorSystem = ActorSystem(name = "todoapi")
+    implicit val system: ActorSystem = ActorSystem(name = "TaskManagerAPI")
     implicit val materializer: ActorMaterializer = ActorMaterializer()
     import system.dispatcher
     // Create a new task repository and assign to the router.
