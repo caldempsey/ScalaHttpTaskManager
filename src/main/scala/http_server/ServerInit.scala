@@ -5,7 +5,7 @@ import akka.stream.ActorMaterializer
 import scala.util.{Failure, Success}
 
 object ServerInit{
-  def run(args: Array[String]){
+  def run(args: Array[String]): String = {
     val host = "localhost"
     val port = 9000
     // Import Akka ActorSystem and Materializer
