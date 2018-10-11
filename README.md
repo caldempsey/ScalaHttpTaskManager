@@ -1,7 +1,7 @@
 # ScalaHttpTaskManager
 
 A task manager which can take arguments from a HTTP client for use in your JVM based back-ends and ecosystem. 
-=======
+---
 
 Roadmap
 ---
