@@ -2,7 +2,6 @@ package http_server
 
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
-
 import scala.util.{Failure, Success}
 
 object ServerInit{
@@ -25,5 +24,11 @@ object ServerInit{
       case Success(_) => println("Success")
       case Failure(error) => println(s"Failed: ${error.getMessage}")
     }
+    // By uncommenting these lines, if the calling thread is the main thread of the application then it will be paused until the future `binding` is completed.
+    // Implements an implicit call to Java's TimeUnit.
+    // Block the calling thread (any executable of ServerInit) for three seconds until we get a return from server.bind.
+    // import scala.concurrent.Await
+    // import scala.concurrent.duration._
+    // Await.result(binding, 3.seconds)
   }
 }
