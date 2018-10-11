@@ -21,8 +21,8 @@ object ServerInit{
     val binding = server.bind()
     // Pattern matching when the servers "bind" property completes.
     binding.onComplete {
-      case Success(_) => println("Success")
-      case Failure(error) => println(s"Failed: ${error.getMessage}")
+      case Success(_) => println("API Server initialised successfully")
+      case Failure(error) => println(s"Failed to start API Server: ${error.getMessage}")
     }
     // By uncommenting these lines, if the calling thread is the main thread of the application then it will be paused until the future `binding` is completed.
     // Implements an implicit call to Java's TimeUnit.
