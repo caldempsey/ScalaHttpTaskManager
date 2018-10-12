@@ -5,6 +5,8 @@ import http_server.ServerInit
 object Bootloader extends App {
   override def main(args: Array[String]): Unit = {
     // Initialise HTTP Server
-    ServerInit.run(new Array[String](0))
+    // ServerInit arguments. First argument is the server timeout.
+    val httpServerArguments = Array("3")
+    ServerInit.run(httpServerArguments)
   }
 }
